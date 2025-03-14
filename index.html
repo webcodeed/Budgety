@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="./favicon.ico.jpg" rel="icon" type="image/x-icon" />
+        <link type="text/css" rel="stylesheet" href="./style.css" />
+        <title>Budget App</title>
+    </head>
+
+    <body>
+        <div class="top">
+            <div class="reset">
+                <button class="reset__btn">
+                    <ion-icon name="refresh-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="budget">
+                <div class="budget__title">
+                    Available Budget in
+                    <span class="budget__title--month"></span>:
+                </div>
+
+                <div class="budget__value">0</div>
+
+                <div class="budget__income">
+                    <div class="budget__income--text">Income</div>
+                    <div class="budget__income--values">
+                        <div class="budget__income--value">0</div>
+                        <div class="budget__income--percentage">&nbsp;</div>
+                    </div>
+                </div>
+
+                <div class="budget__expenses">
+                    <div class="budget__expenses--text">Expenses</div>
+                    <div class="budget__expenses--values">
+                        <div class="budget__expenses--value">0</div>
+                        <div class="budget__expenses--percentage">0%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BOTTOM -->
+        <div class="bottom">
+            <form class="form">
+                <div class="form__container">
+                    <select class="form__type">
+                        <option value="income" selected>+</option>
+                        <option value="expenses">-</option>
+                    </select>
+                    <input
+                        type="text"
+                        class="form__description"
+                        placeholder="form description"
+                    />
+                    <input
+                        type="number"
+                        class="form__value"
+                        placeholder="Value"
+                    />
+                    <button class="form__btn">
+                        <i class="ion-ios-checkmark-outline"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div class="container">
+                <div class="income">
+                    <h2 class="income__title">Income</h2>
+
+                    <div class="income__list">
+                        <div class="item" id="income-LVZ6MOP3BVH14">
+                            <div class="item__description">Income</div>
+                            <div class="item__values-container">
+                                <div class="item__value" data-value="10000">
+                                    10,000.00
+                                </div>
+                                <div class="item__edit">
+                                    <button class="item__edit--btn">
+                                        <ion-icon
+                                        id="edit--btn"
+                                        data-item="income LVZ6MOP3BVH14"
+                                        name="create-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn">
+                                        <i
+                                            class="ion-ios-close-outline"
+                                            id="delete--btn"
+                                            data-item="income LVZ6MOP3BVH14"
+                                        >
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="expenses">
+                    <h2 class="expenses__title">Expenses</h2>
+
+                    <div class="expenses__list">
+                        <div class="item" id="expenses-LVZ6NWZF9TSLR">
+                            <div class="item__description">Rent</div>
+                            <div class="item__values-container">
+                                <div class="item__value" data-value="300">
+                                    300.00
+                                </div>
+                                <div class="item__percentage">---</div>
+                                <div class="item__edit">
+                                    <button class="item__edit--btn">
+                                        <ion-icon 
+                                        id="edit--btn"
+                                        data-item="expenses LVZ6NWZF9TSLR"
+                                        name="create-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn">
+                                        <i
+                                            class="ion-ios-close-outline"
+                                            id="delete--btn"
+                                            data-item="expenses LVZ6NWZF9TSLR"
+                                        >
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+        <!-- <script src="assets/app.js"></script> -->
+        <!-- <script src="./assets/budgety.js"></script> -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

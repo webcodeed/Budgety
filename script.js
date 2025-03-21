@@ -68,7 +68,18 @@ const localStr = () => {
     localStorage.setItem("localData", JSON.stringify(data))
 }
 document.addEventListener("DOMContentLoaded", () => {
-    data = JSON.parse(localStorage.getItem("localData"))
+    data = JSON.parse(localStorage.getItem("localData")) || {
+        items: {
+            expenses: [],
+            income: [],
+        },
+        totals: {
+            expenses: 0,
+            income: 0,
+        },
+        budget: 0,
+        percent: -1,
+    }
     function passIn(type) {
         data.items[type].forEach((item) => {
             addNewItem(

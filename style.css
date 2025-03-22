@@ -350,8 +350,7 @@ h2 {
 }
 
 @media screen and (max-width: 600px) {
-
-	/* top */
+    /* top */
 
     .body {
         font-size: 10px;
@@ -363,9 +362,9 @@ h2 {
     .reset__btn {
         background-color: #ff5049;
         font-size: 15px;
-        top: 19rem;
-        left: 14rem;
-				padding: .7rem 1.5rem;
+        top: 4.3rem;
+        left: 2.2rem;
+        padding: 0.7rem 1.5rem;
     }
     .budget__title {
         font-size: 20px;
@@ -380,14 +379,15 @@ h2 {
         padding: 10px;
     }
 
-		/* bottom */
+    /* bottom */
 
     .form {
         padding: 10px;
     }
-    .form__container {
+    /* .form__container {
+        padding: 15px;
         text-align: left;
-    }
+    } */
     .form__type {
         width: 35px;
         height: 37px;
@@ -412,11 +412,11 @@ h2 {
         font-size: 32px;
     }
 
-		/* list items */
-		
-.container{
-	flex-direction: column;
-	gap: 20px;
-}
+    /* list items */
 
+    .container {
+        padding: 0 .5rem;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
